@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* This is Internal CSS - it lives inside the HTML file */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styling */
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 5px;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-color: #fff;
+            height: 400px;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 20px;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0779e4;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Project Boxes */
+        .project-box {
+            background: #e4e4e4;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #0779e4;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #0779e4;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Mobile Responsiveness */
+        @media(max-width: 768px) {
+            nav {
+                float: none;
+                text-align: center;
+            }
+            header {
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome</h1>
+           >This is a simple HTML-only website template.</p>
+            <a href="#about" class="btn">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I am a web developer. I created this website using only one HTML file. It uses <strong>Internal CSS</strong> (styles located in the head of the document) to make it look modern and responsive.</p>
+            <p>You can replace this text with your own bio.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <p>Here are some projects I have worked on:</p>
+            
+            <div class="project-box">
+                <h3>Project Title 1</h3>
+                <p>Description of the project goes here. It was a great success!</p>
+            </div>
+
+            <div class="project-box">
+                <h3>Project Title 2</h3>
+                <p>Description of the project goes here. I learned a lot building it.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in working together? Send me an email!</p>
+            <p><strong>Email:</strong> <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2023 My Website</p>
+    </footer>
+
+</body>
+</html>
